@@ -5,7 +5,8 @@ Purpose
 some tools for hic  downstream analysis:  
 (1)loop analysis  
 (2)tad analysis  
-(3)contact probability change with genomic distance    
+(3)contact probability change with genomic distance  
+
 Requirements
 -------------------------------------------------------------------
 The envoriment which you need is python=3.7, configparser, and hicexplorer. You can get it from conda by the command of  
