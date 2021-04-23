@@ -33,7 +33,14 @@ result-dlohic hic_down
 
 # You can get help documentation by run "-h" or "--help"
 $python hic_down/run.py -h
-the version of hic_down is : 0.0.1. The envoriment which you need is python=3.7, configparser, and hicexplorer. You can get it from conda by the command ofpython: conda install python=3.7, configparser: conda install -c anaconda configparser, hicexplorer: conda install hicexplorer -c bioconda -c conda-forge. What 's more, you need juicertools which can get from https://github.com/aidenlab/juicer/wiki/Download, if you want to analysis loop from pairsfile.
+the version of hic_down is : 0.0.1. The envoriment which you need is python=3.7, configparser, and hicexplorer. 
+You can get it from conda by the command ofpython: conda install python=3.7, 
+configparser: conda install -c anaconda configparser, 
+hicexplorer: conda install hicexplorer -c bioconda -c conda-forge.
+numpy:  conda install -c anaconda numpy  
+cooler: conda install -c bioconda cooler
+What 's more, you need juicertools which can get from
+https://github.com/aidenlab/juicer/wiki/Download, if you want to analysis loop from pairsfile.
     -h or --help
             get this dictionary
     -c or --config
