@@ -9,7 +9,7 @@ some tools for hic  downstream analysis:
 
 Requirements
 -------------------------------------------------------------------
-The envoriment which you need is python=3.7, configparser, and hicexplorer. You can get it from conda by the command of  
+The envoriment which you need is python=3.7, configparser, hicexplorer，numpy and cooler. You can get it from conda by the command of  
 python: conda install python=3.7  
 configparser: conda install -c anaconda configparser  
 hicexplorer: conda install hicexplorer -c bioconda -c conda-forge  
