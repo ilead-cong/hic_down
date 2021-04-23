@@ -1,22 +1,36 @@
-hic_down
-Purpose
+#hic_down
+
+##Purpose
+
 some tools for hic  downstream analysis:
+
 (1)loop analysis
+
 (2)tad analysis
+
 (3)contact probability change with genomic distance
 
-Requirements
+
+##Requirements
+
 The envoriment which you need is python=3.7, configparser, and hicexplorer. You can get it from conda by the command of
+
 python: conda install python=3.7
+
 configparser: conda install -c anaconda configparser
+
 hicexplorer: conda install hicexplorer -c bioconda -c conda-forge
+
 numpy:  conda install -c anaconda numpy
+
 cooler: conda install -c bioconda cooler
+
 What 's more, you need 
+
 juicertools: which can get from [https://github.com/aidenlab/juicer/wiki/Download,](https://github.com/aidenlab/juicer/wiki/Download,)
  if you want to analysis loop from pairsfile.
 
-Quick Start
+##Quick Start
 ```Shell,default
 #First you should get the package from git
 $ git clone https://github.com/ilead-cong/hic-down.git
