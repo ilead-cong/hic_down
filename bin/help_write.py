@@ -6,7 +6,7 @@ def version():
     return "0.0.1"
 
 def hw():
-    print("\tthe version of dlohic-down is : {0}. \
+    print("\tthe version of hic_down is : {0}. \
 The envoriment which you need is python=3.7, configparser, and hicexplorer. \
 You can get it from conda by the command of\
 python: conda install python=3.7, \
