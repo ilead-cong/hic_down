@@ -13,7 +13,7 @@ python: conda install python=3.7, \
 configparser: conda install -c anaconda configparser, \
 hicexplorer: conda install hicexplorer -c bioconda -c conda-forge, \
 numpy:  conda install -c anaconda numpy, \
-cooler: conda install -c bioconda cooler, \
+cooler: conda install -c bioconda cooler. \
 What 's more, you need juicertools which can get from https://github.com/aidenlab/juicer/wiki/Download, \
 if you want to analysis loop from pairsfile.\n\
     -h or --help \n\t\
