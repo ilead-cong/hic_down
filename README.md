@@ -44,7 +44,8 @@ https://github.com/aidenlab/juicer/wiki/Download, if you want to analysis loop f
     -h or --help
             get this dictionary
     -c or --config
-            generate config.ini(what 's more, you are best to generate the config.ini in the directory of dlohic result, then you can get a rignt config.ini for running with the commonly used default parameters)
+            generate config.ini(what 's more, you are best to generate the config.ini in the directory of dlohic result,
+             then you can get a rignt config.ini for running with the commonly used default parameters)
     -t or --tad
             analysis the tad from coolfile
     -C or --contact
