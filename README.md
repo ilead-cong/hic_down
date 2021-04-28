@@ -6,6 +6,7 @@ some tools for hic  downstream analysis:
 (1)loop analysis  
 (2)tad analysis  
 (3)contact probability change with genomic distance  
+(4)AB compartment analysis  
 
 Requirements
 -------------------------------------------------------------------
@@ -49,9 +50,11 @@ https://github.com/aidenlab/juicer/wiki/Download, if you want to analysis loop f
     -t or --tad
             analysis the tad from coolfile
     -C or --contact
-    contact probability change with genomic distance
+            contact probability change with genomic distance
     -l or --loop
             analysis the loop from pairsfile which is sorted
+    -b or --compartment
+            analysis the AB compartment from coolfile
     -a or --all
             both analysis the tad and loop
 
