@@ -71,11 +71,18 @@ def cfg_wt():
     config_c.set('contact_probability', 'cool_resolution', '5000')
     config_c.set('contact_probability', 'cool_balance', 'no')
     config_c.set('contact_probability', 'chromosome', '1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,X')
-
-
-
     with open('config_hic-down.ini', 'a') as cfg:
         config_c.write(cfg)
+
+    
+    cfg_annotation("the paratemer of AB compartment")
+    config_a = configparser.ConfigParser()
+    config_a.add_section('AB_compartment')
+    config_a.set('AB_compartment', 'data_dir', GLOBAL_path + '/result/05-matrix/')
+    config_a.set('AB_compartment', 'cool_resolution', '5000')
+    config_a.set('AB_compartment', 'outputMatrix', 'no')
+    with open('config_hic-down.ini', 'a') as cfg:
+        config_a.write(cfg)
 
 
 
