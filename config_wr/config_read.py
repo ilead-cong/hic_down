@@ -61,6 +61,16 @@ class ContactCfg():
         self.cool_resolution = con_config.get('contact_probability', 'cool_resolution')
         self.chrom = con_config.get('contact_probability', 'chromosome')
         self.cool_balance = con_config.get('contact_probability', 'cool_balance')
+    
+class CompartCfg():
+    '''
+    '''
+    def __init__(self, cfg_file):
+        com_config = cfg_rd(cfg_file)
+        self.data_dir = com_config.get('AB_compartment', 'data_dir')
+        self.cool_resolution = com_config.get('AB_compartment', 'cool_resolution')
+        self.Omatrix = com_config.get('AB_compartment', 'outputMatrix')
+
 
 
 if __name__ == "__main__":
