@@ -26,8 +26,6 @@ if you want to analysis loop from pairsfile.\n\
     contact probability change with genomic distance\n\
     -l or --loop \n\t\
     analysis the loop from pairsfile which is sorted\n\
-    -b or --compartment \n\t\
-    analysis the AB compartment from coolfile\n\
     -a or --all \n\t\
     both analysis the tad and loop".format(version()))
     return 
