@@ -2,10 +2,10 @@ hic_down
 ===========================================
 Purpose
 ------------------------------------------------------------------------------
-some tools for hic  downstream analysis:  
+some tools for hic downstream analysis:  
 (1)loop analysis  
 (2)tad analysis  
-(3)contact probability change with genomic distance  
+(3)compartment analysis
 
 Requirements
 -------------------------------------------------------------------
@@ -41,19 +41,21 @@ numpy:  conda install -c anaconda numpy,
 cooler: conda install -c bioconda cooler.
 What 's more, you need juicertools which can get from
 https://github.com/aidenlab/juicer/wiki/Download, if you want to analysis loop from pairsfile.
-    -h or --help
+    -h or --help 
             get this dictionary
     -c or --config
-            generate config.ini(what 's more, you are best to generate the config.ini in the directory of dlohic result,
-             then you can get a rignt config.ini for running with the commonly used default parameters)
-    -t or --tad
-            analysis the tad from coolfile
-    -C or --contact
-            contact probability change with genomic distance
-    -l or --loop
-            analysis the loop from pairsfile which is sorted
-    -a or --all
-            both analysis the tad and loop
+            generate config.ini(what 's more, you are best to generate the config.ini in the directory of dlohic result, 
+            then you can get a rignt config.ini for running with the commonly used default parameters)
+    --FindTADs
+            Using HiCExplorer hicFindTADs to find TAD
+    --DiffTADs
+            Using HiCExplorer hicDifferentialTAD to find different TAD
+    --FindLoops
+            Using juicertools hiccups to find loops
+    --DiffLoops
+            Using juicertools hiccupsdiff to find different loops
+    --FindCompartment
+            Using HiCExplorer hicPCA to find compartment
 
 # Second you need to genarate a config file
 $python hic_down/run.py --config
@@ -62,7 +64,7 @@ $python hic_down/run.py --config
 $vim config config_hic-down.ini
 
 # Finally you can use "python hic_down/run.py --option" to start analysis
-$python hic_down/run.py --tad # Having a analysis for tad from cool file
+$python hic_down/run.py --FindTADs 
 
 
 ```
