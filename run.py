@@ -13,7 +13,7 @@ from bin.tad_analysis import difftads
 from bin.loop_analysis import findloops
 from bin.loop_analysis import diffloops
 from bin.compartment_analysis import findcompartment
-from bin.quality_control import tadlength
+
 
 cfg_path = os.getcwd()
 

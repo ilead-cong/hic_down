@@ -1,5 +1,5 @@
 ########################################################################################
-#The dictionary of this analysis
+# The dictionary of this analysis
 ########################################################################################
 
 def version():
@@ -20,14 +20,16 @@ if you want to analysis loop from pairsfile.\n\
     get this dictionary\n\
     -c or --config \n\t\
     generate config.ini(what 's more, you are best to generate the config.ini in the directory of dlohic result, then you can get a rignt config.ini for running with the commonly used default parameters)\n\
-    -t or --tad \n\t\
-    analysis the tad from coolfile\n\
-    -C or --contact \n\
-    contact probability change with genomic distance\n\
-    -l or --loop \n\t\
-    analysis the loop from pairsfile which is sorted\n\
-    -a or --all \n\t\
-    both analysis the tad and loop".format(version()))
+    --FindTADs \n\t\
+    Using HiCExplorer hicFindTADs to find TAD\n\
+    --DiffTADs \n\
+    Using HiCExplorer hicDifferentialTAD to find different TAD\n\
+    --FindLoops \n\t\
+    Using juicertools hiccups to find loops\n\
+    --DiffLoops \n\t\
+    Using juicertools hiccupsdiff to find different loops\n\
+    --FindCompartment \n\t\
+    Using HiCExplorer hicPCA to find compartment".format(version()))
     return 
 
 if __name__ == "__main__":
