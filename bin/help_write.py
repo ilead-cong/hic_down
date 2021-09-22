@@ -29,7 +29,9 @@ if you want to analysis loop from pairsfile.\n\
     --DiffLoops \n\t\
     Using juicertools hiccupsdiff to find different loops\n\
     --FindCompartment \n\t\
-    Using HiCExplorer hicPCA to find compartment".format(version()))
+    Using HiCExplorer hicPCA to find compartment\n\
+    --CoolBox \n\t\
+    generate inputdata for coolbox".format(version()))
     return 
 
 if __name__ == "__main__":

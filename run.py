@@ -6,6 +6,7 @@
 import os
 import sys
 
+from bin.subp_call import subp_c
 from bin.help_write import hw
 from config_wr.config_write import cfg_wt
 from bin.tad_analysis import findtads
@@ -13,6 +14,7 @@ from bin.tad_analysis import difftads
 from bin.loop_analysis import findloops
 from bin.loop_analysis import diffloops
 from bin.compartment_analysis import findcompartment
+from bin.coolbox import coolbox
 
 
 cfg_path = os.getcwd()
@@ -31,7 +33,10 @@ if len(sys.argv) ==2:
     elif ("--DiffLoops" in sys.argv):
         diffloops(f"{cfg_path}/config_hic-down.ini")
     elif ("--FindCompartment" in sys.argv):
-        findcompartment(f"{cfg_path}/config_hic-down.ini")    
+        findcompartment(f"{cfg_path}/config_hic-down.ini")
+    elif ("--CoolBox" in sys.argv):
+        coolbox(f"{cfg_path}/config_hic-down.ini")
+        subp_c(f"cp hic_down/CoolBox.ipynb result_down/")        
     else:
         print('TO DO')
 else:
