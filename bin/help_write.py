@@ -15,7 +15,8 @@ hicexplorer: conda install hicexplorer -c bioconda -c conda-forge, \
 numpy:  conda install -c anaconda numpy, \
 cooler: conda install -c bioconda cooler. \
 What 's more, you need juicertools which can get from https://github.com/aidenlab/juicer/wiki/Download, \
-if you want to analysis loop from pairsfile.\n\
+if you want to analysis loop from pairsfile.\
+Also, if you want show the result with coolbox ,you should read the usage of it from the site https://github.com/GangCaoLab/CoolBox.\n\
     -h or --help \n\t\
     get this dictionary\n\
     -c or --config \n\t\
