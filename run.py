@@ -1,45 +1,44 @@
 ##################################################################################
-#
+# All functions
 ##################################################################################
+
+
 import os
 import sys
 
-
+from bin.subp_call import subp_c
 from bin.help_write import hw
 from config_wr.config_write import cfg_wt
-from bin.tad_analysis import tad
-from bin.loop_analysis import loop
-from bin.contact_chrom import contact
-#from bin.compartment import compartment
+from bin.tad_analysis import findtads
+from bin.tad_analysis import difftads
+from bin.loop_analysis import findloops
+from bin.loop_analysis import diffloops
+from bin.compartment_analysis import findcompartment
+from bin.coolbox import coolbox
+
 
 cfg_path = os.getcwd()
 
-
-if len(sys.argv) == 2:
+if len(sys.argv) ==2:
     if ("-h" in sys.argv) or ("--help" in sys.argv):
         hw()
     elif ("-c" in sys.argv) or ("--config" in sys.argv):
-        cfg_wt()
-    elif ("-C" in sys.argv) or ("--contact" in sys.argv):
-        contact(f"{cfg_path}/config_hic-down.ini")
-    elif ("-t" in sys.argv) or ("--tad" in sys.argv):
-        tad(f"{cfg_path}/config_hic-down.ini")
-    elif ("-l" in sys.argv) or ("--loop" in sys.argv):
-        loop(f"{cfg_path}/config_hic-down.ini")
-    #elif ("-b" in sys.argv) or ("--compartment" in sys.argv):
-        #compartment(f"{cfg_path}/config_hic-down.ini")
-    elif ("-a" in sys.argv) or ("--all" in sys.argv):
-        tad(f"{cfg_path}/config_hic-down.ini")
-        loop(f"{cfg_path}/config_hic-down.ini")
-        print("all analysis is over")
+       cfg_wt()
+    elif ("--FindTADs" in sys.argv):
+        findtads(f"{cfg_path}/config_hic-down.ini")
+    elif ("--DiffTADs" in sys.argv):
+        difftads(f"{cfg_path}/config_hic-down.ini")
+    elif ("--FindLoops" in sys.argv):
+        findloops(f"{cfg_path}/config_hic-down.ini")
+    elif ("--DiffLoops" in sys.argv):
+        diffloops(f"{cfg_path}/config_hic-down.ini")
+    elif ("--FindCompartment" in sys.argv):
+        findcompartment(f"{cfg_path}/config_hic-down.ini")
+    elif ("--CoolBox" in sys.argv):
+        coolbox(f"{cfg_path}/config_hic-down.ini")
+        subp_c(f"cp hic_down/CoolBox.ipynb result_down/")        
     else:
-        print("input erro: please read the usage dictionary")
-        hw()
+        print('TO DO')
 else:
-    print("input erro: please read the usage dictionary")
+    print("input error: please read the usage dictionary")
     hw()
-
-
-
-
-
