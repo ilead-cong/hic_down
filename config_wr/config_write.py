@@ -22,6 +22,7 @@ def cfg_wt():
 
     # GLOBAL config
     cfg_annotation("the directory of working and results, juicertools_dir please use absolute path, like PATH/juicer_tools_1.22.01.jar!!!")
+    cfg_annotation('#reference must be one of hg18, hg19, hg38, dMel, mm9, mm10, anasPlat1, bTaurus3, canFam3, equCab2, galGal4, Pf3D7, sacCer3, sCerS288c, susScr3, or TAIR10; alternatively, this can be the path of the chrom.sizes file that lists on each line the name and size of the chromosomes')
     config_g = configparser.ConfigParser()
     config_g.add_section('GLOBAL')
     config_g.set('GLOBAL','results_dir', GLOBAL_path + '/result_down/')
