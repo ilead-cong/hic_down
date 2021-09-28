@@ -5,7 +5,10 @@ Purpose
 some tools for hic downstream analysis:  
 (1)loop analysis  
 (2)tad analysis  
-(3)compartment analysis
+(3)difference loop  
+(4)difference tad  
+(5)compartment analysis  
+(6)show result above with coolbox
 
 Requirements
 -------------------------------------------------------------------
@@ -18,6 +21,7 @@ cooler: conda install -c bioconda cooler
 What 's more, you need   
 juicertools: which can get from [https://github.com/aidenlab/juicer/wiki/Download,](https://github.com/aidenlab/juicer/wiki/Download,)
  if you want to analysis loop from pairsfile.  
+Also, if you want show the result with coolbox ,you should get it from the site https://github.com/GangCaoLab/CoolBox.  
  
 Quick Start
 ----------------------------------------------------------------------------------------
